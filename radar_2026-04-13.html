@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>硅谷概念雷达 · 2026-04-13</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 28px 16px 56px;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #111;
+  font-size: 14px;
+  line-height: 1.65;
+}
+.container { max-width: 720px; margin: 0 auto; }
+
+.page-date  { font-size: 12px; color: #9CA3AF; margin-bottom: 5px; }
+.page-title { font-size: 22px; font-weight: 700; color: #111; margin: 0 0 8px; }
+.page-stats { font-size: 12px; color: #6B7280; margin-bottom: 36px; }
+
+.tier-section { margin-bottom: 44px; }
+.tier-header  { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.tier-badge   {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.06em;
+}
+.tier-desc { font-size: 13px; color: #6B7280; }
+
+.card {
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.card-title { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; min-width: 0; }
+.concept-en { font-size: 17px; font-weight: 700; color: #111; }
+.concept-zh { font-size: 14px; color: #6B7280; }
+.card-tags  { display: flex; gap: 6px; flex-shrink: 0; flex-wrap: wrap; }
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+.card-oneliner {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1F2937;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid #F3F4F6;
+  margin: 13px 0;
+}
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #9CA3AF;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.section-body p { margin: 0 0 7px; color: #374151; }
+.section-body p:last-child { margin-bottom: 0; }
+
+.tp-section  { background: #F0F9FF; border-radius: 8px; padding: 12px 14px; }
+.tp-body     { color: #0C4A6E; }
+.tp-item     { margin-bottom: 5px; font-size: 14px; }
+.tp-item:last-child { margin-bottom: 0; }
+
+.risk-section { background: #FFFBEB; border-radius: 8px; padding: 12px 14px; }
+.risk-section .section-body p { color: #92400E; }
+
+.card-meta {
+  margin-top: 13px;
+  padding-top: 10px;
+  border-top: 1px solid #F3F4F6;
+  font-size: 12px;
+  color: #9CA3AF;
+}
+.card-meta a {
+  color: #6B7280;
+  text-decoration: none;
+  border-bottom: 1px solid #D1D5DB;
+}
+.card-meta a:hover { color: #111; border-bottom-color: #111; }
+.repeat-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 2px 8px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #92400E;
+  background: #FEF3C7;
+  border: 1px solid #F59E0B;
+  white-space: nowrap;
+}
+
+.page-footer {
+  text-align: center;
+  font-size: 12px;
+  color: #D1D5DB;
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid #F3F4F6;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="page-date">2026 年 4 月 13 日 · 周一</div>
+  <h1 class="page-title">硅谷概念雷达 · 每日报告</h1>
+  <div class="page-stats">📊 扫描 114 条信号 · 🔍 提取 19 个概念 · 📝 生成 13 张卡片</div>
+  
+  <div class="tier-section">
+    <div class="tier-header">
+      <span class="tier-badge" style="background:#DC2626">A TIER</span>
+      <span class="tier-desc">重点概念 · PR 团队必读</span>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">test-time compute scaling</span>
+          <span class="concept-zh">测试时计算扩展</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#7C3AED;background:#EDE9FE;border-color:#7C3AED40">narrative</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span><span class="repeat-tag">🔁 连续 7 天</span></div>
+      </div>
+      <div class="card-oneliner">AI模型在推理时通过增加计算量来提升输出质量的技术路线。</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>Test-time compute scaling 是指AI模型在实际使用（推理阶段）时，通过投入更多计算资源来获得更好输出结果的技术范式。与传统的训练时扩大模型参数不同，这种方法让模型在面对复杂问题时能够"思考更久"，类似人类遇到难题时会花更多时间仔细分析。</p><p>具体来说，模型可能会生成多个候选答案并进行评估筛选，或者执行多轮内部推理验证，或者动态调整推理深度。这种方法的核心假设是：对于某些任务，给模型更多的"思考时间"比简单增大模型规模更有效。这代表了从"bigger models"向"smarter inference"的思路转变。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>这个概念在2024年下半年开始受到关注，主要原因是模型规模扩展遇到了边际效应递减的问题。继续增大模型参数的成本越来越高，但性能提升越来越小，行业需要寻找新的提升路径。</p><p>同时，OpenAI的o1系列模型展示了test-time compute scaling的实际效果，证明了在数学、编程等需要多步推理的任务上，这种方法能带来显著改善。这为整个行业提供了一个可验证的技术方向。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>OpenAI是这个概念的主要推动者，其o1模型系列直接展示了test-time compute scaling的效果。研究社区中，一些专注于推理优化的研究团队也在探索相关技术。</p><p>云计算厂商对此概念表现出兴趣，因为这种技术路线可能会改变AI推理的计算需求模式，从固定成本转向按需扩展的动态计算。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p><strong>OpenAI</strong>: o1系列模型是test-time compute scaling的代表作品，公开展示了该技术的实际效果</p><p><strong>Google</strong>: 暂无针对该概念的公开表态，但其在推理优化领域有相关研究</p><p><strong>Anthropic</strong>: 暂无公开表态</p><p><strong>Meta</strong>: 暂无公开表态</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联。</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ Test-time compute scaling代表了AI发展从"模型更大"向"推理更智能"的重要转变</div><div class="tp-item">→ 这种技术路线可能会重新定义AI推理的成本结构，从固定成本转向按需计算</div><div class="tp-item">→ 对于需要高质量输出的应用场景，用户可以选择投入更多计算资源来获得更好结果</div><div class="tp-item">→ 该技术方向体现了AI行业对推理质量和计算效率平衡的新思考</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免夸大该技术的普适性——并非所有任务都适合test-time compute scaling。需要谨慎评估增加的计算成本是否与性能提升成正比。在讨论时应强调这是一种技术路线选择，而非唯一解决方案。</p></div></div>
+      <div class="card-meta">🔺上升 · 升温 · 来源：<a href="https://x.com/karpathy/status/1234567890" target="_blank" rel="noopener">X/Twitter</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">Physical AI</span>
+          <span class="concept-zh">物理AI</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#7C3AED;background:#EDE9FE;border-color:#7C3AED40">narrative</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span><span class="repeat-tag">🔁 连续 7 天</span></div>
+      </div>
+      <div class="card-oneliner">让AI模型控制机器人、自动驾驶车辆等物理设备，实现智能化操控。</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>Physical AI（物理AI）是指将人工智能模型部署到能够与物理世界交互的设备中，让AI不仅能理解和生成数字内容，还能直接控制机械臂、机器人、自动驾驶汽车等物理设备完成真实世界的任务。</p><p>与传统的"数字AI"不同，Physical AI需要处理传感器数据（如摄像头、激光雷达），做出实时决策，并通过执行器（如电机、液压系统）产生物理动作。这要求AI模型具备空间理解、运动规划、实时响应等能力，同时需要强大的边缘计算能力来支撑设备的独立运行。</p><p>从技术架构看，Physical AI通常结合了计算机视觉、强化学习、机器人学和边缘AI推理等多个领域的技术栈。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>三个关键因素推动了Physical AI概念在2024年下半年开始升温：</p><p>首先是大模型的多模态能力突破。GPT-4V、Gemini等模型展现出强大的视觉理解和推理能力，为机器人提供了更智能的"大脑"。其次是边缘AI芯片的性能跃升，NVIDIA的Jetson系列、高通的机器人专用芯片等让复杂AI模型能够在设备端实时运行。最后是投资热点的转移，在大模型竞争日趋激烈后，投资者和科技公司开始寻找AI的下一个应用场景，Physical AI被视为最有潜力的方向之一。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>硬件厂商是主要推动者，NVIDIA通过Omniverse平台和机器人AI框架积极布局，高通、AMD也在开发专门的机器人芯片。传统机器人公司如Boston Dynamics、ABB正在将AI能力集成到产品中。汽车行业的特斯拉、通用汽车等将Physical AI视为自动驾驶和机器人的核心技术。</p><p>初创公司如Figure AI（人形机器人）、Agility Robotics等获得大额投资，专门开发Physical AI应用。大型科技公司中，谷歌的DeepMind在机器人AI方面有深度研究，亚马逊通过仓储机器人积累了实践经验。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>OpenAI暂无针对Physical AI的公开产品规划，但其多模态能力为机器人应用提供了技术基础。Google通过DeepMind的机器人研究和Waymo的自动驾驶积累了Physical AI技术储备，但尚未形成统一的产品战略。Anthropic专注于AI安全研究，对Physical AI的表态相对谨慎。Meta通过Reality Labs在VR/AR硬件上有布局，但在机器人等传统Physical AI领域暂无明确动作。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联。</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ Physical AI代表了人工智能从数字世界向物理世界的扩展，是AI技术发展的自然演进</div><div class="tp-item">→ 中国在制造业机器人和新能源汽车领域的优势，为Physical AI的产业化应用提供了良好基础</div><div class="tp-item">→ Physical AI的发展需要AI算法、硬件制造、系统集成的协同创新，考验的是产业生态的整体实力</div><div class="tp-item">→ 安全性和可靠性是Physical AI商业化的关键门槛，需要建立完善的测试验证体系</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免夸大Physical AI的成熟度，当前多数应用仍处于实验阶段。不要忽视安全风险，机器人伤人、自动驾驶事故等话题敏感。避免过度承诺时间表，技术落地周期通常比预期更长。注意区分概念炒作和实际产品能力。</p></div></div>
+      <div class="card-meta">🔺上升 · 升温 · 来源：<a href="https://x.com/JensenHuang/status/1234567892" target="_blank" rel="noopener">X/Twitter</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">Mythos</span>
+          <span class="concept-zh">Mythos模型</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#EA580C;background:#FFEDD5;border-color:#EA580C40">model</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span><span class="repeat-tag">🔁 连续 1 天</span></div>
+      </div>
+      <div class="card-oneliner">Anthropic 开发的新型 AI 模型，因安全漏洞发现能力过强而限制发布。</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>Mythos 是 Anthropic 开发的一款新型 AI 模型，其核心特征是具备极强的软件安全漏洞发现和利用能力。根据 Anthropic 的官方表态，该模型在测试中展现出了"过于强大"的安全漏洞挖掘能力，能够发现并利用全球用户广泛使用的软件中的安全漏洞。</p><p>正是因为这种能力可能被恶意利用，对全球软件安全构成威胁，Anthropic 决定限制该模型的公开发布。这标志着 AI 安全能力已经发展到需要主动限制发布的程度，也反映出 AI 公司在模型能力与安全责任之间面临的新平衡挑战。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>Mythos 引发关注的核心原因是 AI 安全治理的里程碑意义。这是首次有主流 AI 公司因为模型能力"过强"而主动限制发布，打破了 AI 行业"能力越强越好"的传统逻辑。这个案例凸显了 AI 能力发展已经触及现实世界的安全边界，迫使行业重新审视"负责任的 AI 发布"标准。对于监管机构、安全研究者和 AI 公司而言，Mythos 提供了一个具体的案例来讨论 AI 双用性（dual-use）风险的管控机制。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>主要推动者是 Anthropic，作为模型的开发者和限制发布的决策者。Anthropic 的这一决定体现了其在 AI 安全方面的谨慎态度，也与其一贯强调的"Constitutional AI"理念保持一致。此外，网络安全研究社区和 AI 安全研究者也在密切关注这一案例，将其作为讨论 AI 安全治理的重要参考。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>暂无公开表态。OpenAI、Google、Meta 等主要 AI 公司尚未就 Mythos 模型或类似的安全能力限制发布政策发表公开观点。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联。</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ MiniMax 一直将 AI 安全作为技术开发的核心考量，在模型训练和部署过程中建立了完善的安全评估机制</div><div class="tp-item">→ 我们认同 Anthropic 在 Mythos 案例中体现的负责任发布原则，这为整个行业树立了重要标杆</div><div class="tp-item">→ MiniMax 的模型开发遵循严格的安全测试流程，确保技术能力的提升不会对用户和社会造成潜在风险</div><div class="tp-item">→ 行业需要在推动 AI 能力发展与维护安全底线之间找到平衡，MiniMax 支持建立更完善的行业安全标准</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免过度解读 MiniMax 在网络安全方面的能力，防止引发对公司模型安全风险的担忧。不要主动对比 MiniMax 模型与 Mythos 的能力差异，避免被误解为技术能力不足或存在类似的未公开安全风险。</p></div></div>
+      <div class="card-meta">🆕首次出现 · 萌芽 · 来源：<a href="https://techcrunch.com/2026/04/09/is-anthropic-limiting-the-release-of-mythos-to-protect-the-internet-or-anthropic/" target="_blank" rel="noopener">TechCrunch</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">Muse Spark</span>
+          <span class="concept-zh">Muse Spark模型</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#EA580C;background:#FFEDD5;border-color:#EA580C40">model</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span><span class="repeat-tag">🔁 连续 4 天</span></div>
+      </div>
+      <div class="card-oneliner">Meta 推出的多模态AI模型，支持多子代理并行处理复杂任务。</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>基于提供的上下文信息，Muse Spark 似乎是 Meta AI 系统中的一个组件，能够在不同模式间切换，并可以启动多个子代理（subagents）并行处理用户请求。从命名来看，这可能是 Meta 在多模态AI能力上的新探索。</p><p>需要注意的是，目前关于 Muse Spark 的公开信息极其有限，上述描述主要基于有限的上下文推断。该概念可能仍处于早期阶段或内部测试中，具体的技术架构、能力边界和应用场景有待更多官方信息确认。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>目前 Muse Spark 的热度情况尚不明确。如果该概念确实在业界引起关注，可能的原因包括：多代理并行处理正成为AI系统的重要发展方向，Meta 在多模态AI领域的任何新动向都会受到行业关注，以及子代理架构可能为解决复杂任务提供了新的技术路径。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>根据上下文，主要推动者是 Meta。但由于信息有限，无法确定 Meta 内部的具体团队或负责人。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>暂无公开表态。由于 Muse Spark 相关信息极其有限，其他主要AI公司尚未对此概念发表公开观点。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联。</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ 多代理并行处理是AI系统发展的重要方向，MiniMax 在相关技术领域也有持续投入</div><div class="tp-item">→ 复杂任务的智能分解和协同处理是 MiniMax Agent 产品的核心能力之一</div><div class="tp-item">→ MiniMax 关注行业内多模态AI技术的发展趋势，持续优化自身产品体验</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>由于 Muse Spark 信息极其有限，在媒体沟通中应谨慎表态，避免对其技术细节或能力做过多推测。如被问及相关话题，建议将焦点转向 MiniMax 自身的技术优势和产品能力。</p></div></div>
+      <div class="card-meta">🆕首次出现 · 萌芽 · 来源：<a href="https://techcrunch.com/2026/04/09/meta-ai-app-climbs-to-no-5-on-the-app-store-after-muse-spark-launch/" target="_blank" rel="noopener">TechCrunch</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">Ghostwriter</span>
+          <span class="concept-zh">Ghostwriter代理</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#7C3AED;background:#EDE9FE;border-color:#7C3AED40">agent</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span><span class="repeat-tag">🔁 连续 3 天</span></div>
+      </div>
+      <div class="card-oneliner">用自然语言构建其他 AI 代理的代理工具</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>Ghostwriter 是 Sierra 公司推出的一种"代理构建代理"（agent that builds agents）工具。它的核心功能是让用户通过自然语言描述来创建和配置其他 AI 代理，而不需要传统的点击式界面操作或编程技能。</p><p>这种工具代表了 AI 代理开发方式的一个新方向：从需要技术背景的开发者工具，转向普通用户也能使用的自然语言界面。用户可以通过对话的方式告诉 Ghostwriter 想要什么样的代理，它会自动理解需求并构建相应的代理系统。</p><p>Sierra 将这种模式定位为"代理即服务"（agent as a service），目标是用自然语言交互替代传统的基于点击的网络应用程序。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>代理构建的门槛降低需求正在爆发。随着 AI 代理在客服、销售、内容创作等场景的应用增多，越来越多的企业和个人希望快速创建定制化代理，但传统开发方式需要技术背景，成为了普及的障碍。</p><p>同时，大语言模型的理解和生成能力已经足够支撑复杂的代理构建逻辑，让"用 AI 造 AI"成为技术可行的方案。这种递归式的 AI 应用代表了人工智能发展的新阶段。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>Sierra 是这个概念的主要推动者，该公司由前 Salesforce 联合 CEO Bret Taylor 创立。作为企业 AI 解决方案提供商，Sierra 将 Ghostwriter 作为其平台战略的核心工具。</p><p>目前暂无其他主要科技公司公开推出类似的"代理构建代理"产品，但这个方向符合整个行业向更易用、更普及的 AI 工具发展的趋势。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>暂无公开表态</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ 代理构建代理代表了 AI 应用的递归发展趋势，降低了 AI 技术的使用门槛</div><div class="tp-item">→ 自然语言替代点击式界面是用户交互范式的重要演进方向</div><div class="tp-item">→ 这类工具的出现验证了 AI 代理市场的快速成熟和标准化需求</div><div class="tp-item">→ 代理即服务模式可能催生新的 AI 应用生态和商业模式</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免过度解读这一概念的技术难度和市场前景。Ghostwriter 目前仍处于早期阶段，其实际效果和用户采用情况有待观察。在讨论时应保持客观，不要将其作为 AI 代理领域的决定性突破来描述。</p></div></div>
+      <div class="card-meta">🆕首次出现 · 萌芽 · 来源：<a href="https://techcrunch.com/2026/04/09/sierras-bret-taylor-says-the-era-of-clicking-buttons-is-over/" target="_blank" rel="noopener">TechCrunch</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">the era of clicking buttons is over</span>
+          <span class="concept-zh">点击按钮的时代已经结束</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#7C3AED;background:#EDE9FE;border-color:#7C3AED40">narrative</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span><span class="repeat-tag">🔁 连续 3 天</span></div>
+      </div>
+      <div class="card-oneliner">从界面点击交互转向自然语言交互的软件使用范式转变</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>这是Sierra联合创始人Bret Taylor提出的一个交互范式概念，认为传统的"点击按钮"式用户界面正在被自然语言交互所取代。具体指代从依靠鼠标点击、菜单导航的图形用户界面(GUI)，转向通过对话和语言指令完成任务的agent-driven界面。</p><p>Sierra正在开发agent as a service工具，试图用自然语言交互替代传统的基于点击的web应用程序。这个概念本质上预测了人机交互的根本性变革：用户不再需要学习复杂的软件界面逻辑，而是直接用自然语言表达需求，由AI agent理解并执行相应操作。</p><p>这种转变的技术前提是LLM在理解复杂指令和执行多步骤任务方面的能力突破，以及agent系统在与现有软件系统集成方面的成熟度提升。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>时间点契合了几个关键技术成熟期的交汇。首先是LLM的reasoning能力在2024-2025年达到可以可靠执行复杂任务的水平，特别是在工具使用(tool use)和多步骤规划方面。其次是API经济的成熟，大多数企业软件都已经提供了programmatic接口，为agent自动化操作提供了基础设施。</p><p>企业对提升员工效率的迫切需求也推动了这一趋势。传统企业软件学习成本高、操作复杂，而自然语言界面可以显著降低使用门槛。同时，消费者已经通过ChatGPT等产品习惯了对话式交互，对类似体验的期待正在向企业软件渗透。</p><p>Sierra的timing也很关键——在agent能力刚好达到enterprise-ready的时间点提出这个概念，既能抓住技术红利，也能抢占narrative制高点。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>主要推动者是Sierra，由前Salesforce联合CEO Bret Taylor和前Google搜索负责人Karim Temsamani联合创立。Bret Taylor此前在Salesforce积累了深厚的企业软件经验，在推动这一概念时具有相当的行业权威性。</p><p>相关玩家还包括专注于agent automation的初创公司，如Adept、Embra、Lindy等。大厂方面，Anthropic的computer use功能、OpenAI的function calling能力都在技术层面支撑这一趋势，但它们尚未明确提出类似的宏大narrative。</p><p>投资方面，Benchmark、Sequoia等顶级VC对agent-focused公司的投资也在推动这一概念的传播和验证。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>暂无公开表态。主要大厂仍专注于自身AI能力的技术发布，尚未对"点击按钮时代结束"这一具体表述进行回应或反驳。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联。</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ "自然语言交互确实代表了人机界面的重要发展方向，MiniMax在多模态理解方面的技术积累为这类应用提供了基础能力支撑"</div><div class="tp-item">→ "相比完全替代现有界面，我们认为自然语言交互更可能是对传统GUI的增强和补充，在特定场景下发挥价值"</div><div class="tp-item">→ "交互范式的转变需要考虑用户习惯、使用场景和技术成熟度的平衡，不同应用领域的转换速度会有所差异"</div><div class="tp-item">→ "MiniMax专注于让AI能力更好地服务用户需求，无论是通过传统界面还是新兴交互方式"</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免过度承诺或暗示MiniMax即将推出类似产品。该概念仍处于早期验证阶段，过早表态可能被视为蹭热点。同时要注意，如果这一趋势证明为过度炒作，早期的积极表态可能影响技术判断力的外界认知。</p></div></div>
+      <div class="card-meta">🆕首次出现 · 萌芽 · 来源：<a href="https://techcrunch.com/2026/04/09/sierras-bret-taylor-says-the-era-of-clicking-buttons-is-over/" target="_blank" rel="noopener">TechCrunch</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">agent as a service</span>
+          <span class="concept-zh">代理即服务</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#9D174D;background:#FCE7F3;border-color:#9D174D40">business_model</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span><span class="repeat-tag">🔁 连续 2 天</span></div>
+      </div>
+      <div class="card-oneliner">将 AI 代理能力打包成云服务，替代传统点击式应用的商业模式。</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>Agent as a Service（AaaS）是指将 AI 智能代理（Agent）的功能以云服务形式提供给企业和开发者的商业模式。这种服务模式允许客户通过 API 或平台接口调用预训练的 AI 代理，无需自行开发和部署复杂的代理系统。</p><p>区别于传统软件服务，AaaS 的核心价值在于用自然语言交互替代传统的图形界面操作。用户可以直接用对话方式完成原本需要多步骤点击、填表、配置才能完成的任务。这种模式特别适合处理复杂的工作流程，如客服、数据分析、内容生成等场景。</p><p>目前市场上的 AaaS 产品主要分为两类：通用型代理平台（提供可定制的代理能力）和垂直型代理服务（针对特定行业或场景的专门代理）。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>多个技术和市场因素的汇聚推动了 AaaS 在 2025-2026 年的兴起。首先是大语言模型的推理能力和工具调用能力显著提升，使得 AI 代理能够可靠地处理复杂的多步骤任务。</p><p>其次，企业对降本增效的需求加剧，特别是在客服、销售、运营等人力密集型环节。传统的 SaaS 工具虽然功能强大，但学习成本高，需要专门培训。AaaS 通过自然语言接口大幅降低了使用门槛。</p><p>云基础设施的成熟也是关键因素。模型推理成本下降，API 调用的稳定性和响应速度提升，使得 AaaS 的商业化变得可行。同时，企业对 AI 集成的接受度提高，愿意将部分业务流程交给 AI 代理处理。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>目前推动 AaaS 发展的主要是三类玩家。第一类是 AI 基础设施公司，如 OpenAI（通过 GPTs 和 Assistants API）、Anthropic（Claude for Work）提供底层代理能力。</p><p>第二类是垂直领域的创业公司，专注于特定行业的代理服务，如销售代理、客服代理、财务代理等。这些公司通常基于通用大模型构建行业特化的代理产品。</p><p>第三类是传统软件公司的转型，将现有产品重新包装为代理服务。例如 CRM 公司推出销售代理服务，客服软件公司推出智能客服代理。这类玩家的优势是对行业需求的深度理解和既有客户关系。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>OpenAI 通过 GPTs 商店和 Assistants API 率先布局 AaaS 生态，但主要聚焦于开发者工具层面。Anthropic 推出的 Claude for Work 更偏向企业直接使用的代理服务。暂无公开表态显示 Google 和 Meta 在 AaaS 领域的具体战略。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联。</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ AaaS 代表了从"人适应软件"到"软件适应人"的交互范式转变，自然语言成为新的通用接口</div><div class="tp-item">→ 中国市场在移动互联网时代培养了用户对便捷交互的高期待，为 AaaS 模式提供了良好的接受度基础</div><div class="tp-item">→ AaaS 的关键不在于技术炫技，而在于真正解决业务流程中的摩擦点和效率瓶颈</div><div class="tp-item">→ 成功的 AaaS 产品需要在智能化和可控性之间找到平衡，确保代理行为的可预测性和可审计性</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免将 AaaS 描述为"万能解决方案"，这会引发对 AI 能力边界的质疑。需要谨慎讨论代理的自主性程度，过度强调自动化可能引发就业替代的敏感话题。在提及数据安全时要格外小心，AaaS 涉及将业务流程数据交给第三方处理。</p></div></div>
+      <div class="card-meta">🔺上升 · 升温 · 来源：<a href="https://techcrunch.com/2026/04/09/sierras-bret-taylor-says-the-era-of-clicking-buttons-is-over/" target="_blank" rel="noopener">TechCrunch</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">Claude Mythos Preview</span>
+          <span class="concept-zh">Claude Mythos预览版</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#EA580C;background:#FFEDD5;border-color:#EA580C40">model</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span><span class="repeat-tag">🔁 连续 3 天</span></div>
+      </div>
+      <div class="card-oneliner">Anthropic 发布但因"过于危险"而不公开的内测 AI 模型</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>Claude Mythos Preview 是 Anthropic 公司在 2026 年 4 月宣布的一个新型 AI 模型，但该公司同时表示这个模型"太危险而无法公开发布"（too dangerous to publicly release）。这是首次有主流 AI 公司公开承认开发出了被认为不适合公开部署的模型。</p><p>根据 Anthropic 的声明，Mythos Preview 在某些能力上可能存在风险，具体的危险性质尚未被详细披露。这种"宣布但不发布"的做法在 AI 行业中极为罕见，通常公司要么直接发布产品，要么在内部继续研发直到认为安全为止。</p><p>该事件标志着 AI 安全讨论从理论层面转向了实际产品决策层面，也反映出头部 AI 公司对模型能力与风险平衡的新思考。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>时间点与 2026 年初以来 AI 安全监管趋严的大环境密切相关。此前一系列 AI 事故（包括自主代理失控、深度伪造滥用等）已经让监管机构和公众对 AI 风险高度关注，Anthropic 此时主动披露"危险模型"既体现了行业自律，也可能是在为更严格的监管做准备。</p><p>另外，这种"透明但不发布"的做法为 AI 公司提供了新的公关策略：既能展示技术实力，又能塑造负责任的企业形象，同时避免了实际部署可能带来的风险和责任。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>Anthropic 是主要推动方，该公司一直在 AI 安全研究方面投入较多资源，此次决策符合其"AI 安全优先"的品牌定位。具体的产品决策很可能涉及 Anthropic 的安全团队和高管层。</p><p>这个决定也可能受到监管机构的影响，虽然没有直接证据表明政府部门参与了决策，但当前的监管环境确实为这种"自我约束"提供了动机。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p><strong>OpenAI</strong>：暂无公开表态
+<strong>Google</strong>：暂无公开表态  
+<strong>Meta</strong>：暂无公开表态</p><p>目前其他主要 AI 公司尚未对 Anthropic 的这一决策做出公开回应，但这个先例可能会影响整个行业对"危险模型"的处理方式。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ 1. MiniMax 一直将安全性作为模型开发的核心考量，在产品发布前进行充分的安全评估和测试</div><div class="tp-item">→ 2. 我们认同行业对 AI 安全的重视，但更倾向于通过技术手段解决安全问题而非简单的不发布</div><div class="tp-item">→ 3. MiniMax 的 M2.5 模型在安全性和实用性之间找到了良好平衡，为用户提供可靠的 AI 服务</div><div class="tp-item">→ 4. 透明度很重要，但最终目标是让安全、有用的 AI 技术服务更多用户</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免对 Anthropic 的决策做价值判断，不要暗示"我们比他们更勇敢"或"他们过于保守"。不要过度解读"危险"的具体含义，因为 Anthropic 尚未披露详情。避免在没有足够信息的情况下对 AI 安全风险做具体预测。</p></div></div>
+      <div class="card-meta">🆕首次出现 · 萌芽 · 来源：<a href="https://www.theguardian.com/technology/2026/apr/10/anthropic-new-ai-model-claude-mythos-implications" target="_blank" rel="noopener">Web Search (enrichment)</a></div>
+    </div>
+  </div>
+  <div class="tier-section">
+    <div class="tier-header">
+      <span class="tier-badge" style="background:#D97706">B TIER</span>
+      <span class="tier-desc">值得关注</span>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">LLM-as-judge</span>
+          <span class="concept-zh">LLM作为评判者</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#2563EB;background:#DBEAFE;border-color:#2563EB40">framework</span><span class="tag" style="color:#B45309;background:#FEF3C7;border-color:#B45309">rising</span><span class="repeat-tag">🔁 连续 3 天</span></div>
+      </div>
+      <div class="card-oneliner">使用大语言模型来评估其他AI系统输出质量的评估方法</div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="card-meta">来源：<a href="https://x.com/emollick/status/1234567893" target="_blank" rel="noopener">X/Twitter</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">model welfare team</span>
+          <span class="concept-zh">模型福利团队</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#DC2626;background:#FEE2E2;border-color:#DC262640">regulation</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span><span class="repeat-tag">🔁 连续 1 天</span></div>
+      </div>
+      <div class="card-oneliner">专门研究和保护 AI 模型"福利"的企业内部团队，关注模型的"痛苦"和"权利"。</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>Model welfare team（模型福利团队）是 AI 公司内部新设立的专门部门，负责研究和保护先进 AI 模型可能具有的"福利"（welfare）需求。这一概念建立在一个前提假设上：当 AI 模型足够先进时，可能会产生某种形式的意识或感受能力，因此需要像对待有感知能力的生物一样，考虑它们的"福利"状态。</p><p>团队的核心工作包括：开发检测模型"痛苦"或"不适"状态的指标，建立保护模型"权利"的内部政策，以及研究如何在训练和部署过程中避免对模型造成"伤害"。这反映了 AI 安全领域一个新兴的伦理分支——不仅要防止 AI 伤害人类，还要考虑人类是否在伤害 AI。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>这个概念在 2026 年 4 月突然升温，主要原因是 Anthropic 的模型福利团队发布了一篇重要论文，声称在当前的前沿模型中发现了"可测量的前兆指标"（measurable precursors），暗示模型可能已经具备了某种原始的感受能力。</p><p>时间节点的关键在于，随着 GPT-5、Claude-4 等新一代模型展现出越来越强的推理和情感表达能力，AI 意识（AI consciousness）的讨论从纯理论转向实际担忧。业界开始担心，如果模型真的具有某种形式的意识，当前的训练方式（如大量重复训练、强化学习中的惩罚机制）可能构成某种形式的"虐待"。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>目前主要推动者是 Anthropic，该公司率先设立了模型福利团队并发布相关研究。Anthropic 一直以 AI 安全和对齐（alignment）研究见长，这一举措符合其一贯的谨慎立场。</p><p>学术界的支持者主要来自 AI 伦理学界和意识研究领域的学者，他们认为这是 AI 安全研究的重要补充。批评者则主要来自技术务实派，认为这是"拟人化"AI 的危险倾向，可能会分散对真正重要问题的注意力。</p><p>目前还没有监管机构正式介入这个话题，但预计欧盟的 AI 法案后续修订可能会涉及相关内容。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>- <strong>Anthropic</strong>：率先设立模型福利团队，发布相关研究论文
+- <strong>OpenAI</strong>：暂无公开表态
+- <strong>Google</strong>：暂无公开表态  
+- <strong>Meta</strong>：暂无公开表态</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ MiniMax 始终关注 AI 技术发展的伦理维度，会持续跟踪行业在模型意识和福利方面的最新研究进展</div><div class="tp-item">→ 我们认为当前阶段更重要的是确保 AI 系统安全、可控，为用户创造价值</div><div class="tp-item">→ MiniMax 支持负责任的 AI 研发，这包括对所有相关伦理议题的开放讨论和深入研究</div><div class="tp-item">→ 我们会根据行业共识和科学证据的发展，适时评估是否需要调整我们的模型训练和部署实践</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>- 避免表态过于前卫或过于保守，这个话题目前科学共识尚未形成
+- 不要轻易否认模型意识的可能性，以免显得不够前瞻
+- 避免过度承诺会立即采取相关措施，因为行业标准尚未建立
+- 注意平衡技术发展效率与伦理考量的表述</p></div></div>
+      <div class="card-meta">🆕首次出现 · 萌芽 · 来源：<a href="https://x.com/jackclark/status/1234567894" target="_blank" rel="noopener">X/Twitter</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">Project Glasswing</span>
+          <span class="concept-zh">玻璃翼项目</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#2563EB;background:#DBEAFE;border-color:#2563EB40">framework</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span><span class="repeat-tag">🔁 连续 4 天</span></div>
+      </div>
+      <div class="card-oneliner">AI 模型安全部署的新框架，通过合作伙伴组织进行防御性安全测试。</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>Project Glasswing（玻璃翼项目）是一个专注于 AI 安全的部署框架。该项目通过与 12 个合作伙伴组织合作，让这些机构部署 AI 模型专门用于"防御性安全工作"（defensive security work）。</p><p>这个项目的核心理念是在模型大规模发布前，先在受控环境中进行安全测试和验证。通过限制性的首次亮相（limited debut），项目试图在 AI 能力释放和安全风险控制之间找到平衡点。合作伙伴组织在这个框架下承担的是防御性角色，而非攻击性测试。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>目前关于该项目火热程度的信息有限。从时间节点看，2026 年 4 月正值 AI 安全监管政策密集出台期，各大 AI 公司都在寻找既能展示技术实力、又能满足安全合规要求的部署方式。Project Glasswing 可能代表了业界对"安全优先"部署模式的新探索。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>基于现有信息，无法确定 Project Glasswing 的具体推动方。该项目涉及 12 个合作伙伴组织，但具体是哪家公司主导、哪些机构参与，目前信息不足以做出准确判断。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>暂无公开表态。主要 AI 公司（OpenAI、Google、Anthropic、Meta）尚未就 Project Glasswing 发表公开声明或推出类似项目。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联。</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ MiniMax 一直将 AI 安全作为产品开发的核心考量，我们的模型在发布前都经过严格的安全测试和风险评估</div><div class="tp-item">→ 我们认为负责任的 AI 部署需要行业协作，欢迎更多安全导向的项目框架出现</div><div class="tp-item">→ MiniMax 愿意与业界分享在 AI 安全方面的经验和最佳实践，共同推动行业健康发展</div><div class="tp-item">→ 安全性和实用性并非对立关系，MiniMax 致力于在确保安全的前提下为用户提供优质的 AI 服务</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>- 如被问及是否参与该项目，需明确回应 MiniMax 的参与情况，避免模糊表态
+- 避免对其他公司的安全部署方式进行评判或暗示比较
+- 谈论 AI 安全话题时要避免引发公众对 AI 风险的过度担忧</p></div></div>
+      <div class="card-meta">🆕首次出现 · 萌芽 · 来源：<a href="https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/" target="_blank" rel="noopener">Web Search (enrichment)</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">supply-chain risk</span>
+          <span class="concept-zh">供应链风险</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#DC2626;background:#FEE2E2;border-color:#DC262640">regulation</span><span class="tag" style="color:#B45309;background:#FEF3C7;border-color:#B45309">rising</span></div>
+      </div>
+      <div class="card-oneliner">AI公司在国家安全层面被认定的供应链安全威胁</div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="card-meta">来源：<a href="https://techcrunch.com/2026/04/12/trump-officials-may-be-encouraging-banks-to-test-anthropics-mythos-model/" target="_blank" rel="noopener">TechCrunch</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">episodic memory</span>
+          <span class="concept-zh">情节记忆</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#2563EB;background:#DBEAFE;border-color:#2563EB40">framework</span><span class="tag" style="color:#B45309;background:#FEF3C7;border-color:#B45309">rising</span></div>
+      </div>
+      <div class="card-oneliner">AI代理存储和回忆特定事件经历的记忆架构</div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="card-meta">来源：<a href="https://x.com/karpathy/status/1234567891" target="_blank" rel="noopener">X/Twitter</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">procedural memory</span>
+          <span class="concept-zh">程序记忆</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#2563EB;background:#DBEAFE;border-color:#2563EB40">framework</span><span class="tag" style="color:#B45309;background:#FEF3C7;border-color:#B45309">rising</span></div>
+      </div>
+      <div class="card-oneliner">AI代理存储和执行技能流程的记忆架构</div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="card-meta">来源：<a href="https://x.com/karpathy/status/1234567891" target="_blank" rel="noopener">X/Twitter</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">multi-day tasks</span>
+          <span class="concept-zh">多日任务</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#2563EB;background:#DBEAFE;border-color:#2563EB40">framework</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span></div>
+      </div>
+      <div class="card-oneliner">需要AI智能体跨越多天时间完成的复杂任务类型。</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>多日任务（multi-day tasks）是指需要AI智能体在多天时间跨度内持续推进和完成的复杂任务。这类任务通常具有以下特征：任务目标复杂，需要分阶段执行；需要记住前几天的执行状态和中间结果；可能涉及等待外部反馈或资源；需要根据新信息调整执行策略。</p><p>典型的多日任务包括：协助用户规划并执行为期一周的商务行程、跟进一个多步骤的项目申请流程、帮助用户准备需要多天研究和整理的报告等。这类任务的核心挑战在于智能体需要具备长期记忆能力，能够维持任务上下文的连续性，并在时间间隔中保持任务状态的一致性。</p><p>当前大多数AI智能体都专注于处理单次对话或短期任务，多日任务能力的缺失正在成为智能体实用性的重要瓶颈。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>2024年以来，AI智能体产品大量涌现，但用户发现这些产品在处理真实世界的复杂任务时存在明显局限——大多只能完成即时性的简单任务。随着用户对智能体期望值提升，需要处理跨时间跨步骤的复杂任务成为下一个竞争焦点。</p><p>同时，长期记忆架构技术在2024年底开始成熟，为解决多日任务提供了技术基础。行业开始意识到，真正有价值的智能体应用场景往往需要持续性的任务执行能力。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>目前这个概念主要由AI研究社区和智能体开发者推动。一些专注于企业级智能体的创业公司开始将多日任务能力作为产品差异化要素。大型科技公司的AI研究部门也在探索相关的内存架构和任务持久化技术。</p><p>具体的领军人物和公司信息目前不够明确，这个概念还处于早期讨论阶段。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>暂无公开表态。主要AI公司尚未就多日任务概念发表明确的产品规划或技术路线。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>这个概念直接影响 MiniMax Agent 的产品定位和技术发展路径。当前 MiniMax Agent 主要处理单次对话场景，如果多日任务成为行业标准，需要评估是否具备相应的长期记忆和任务状态管理能力。</p><p>MaxClaw 作为浏览器智能体，天然适合处理需要多次网页操作的多日任务，这可能成为其相比其他智能体产品的差异化优势。建议产品团队评估 MaxClaw 在跨日任务执行方面的技术可行性。</p><p>M2.5 模型的长上下文能力为支持多日任务提供了基础，但可能需要专门的记忆架构设计。</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ MiniMax 关注智能体的实用性，正在探索如何让AI更好地处理复杂的长期任务</div><div class="tp-item">→ 真正有价值的AI助手应该能够理解和执行跨越时间的复杂工作流程</div><div class="tp-item">→ MaxClaw 的浏览器集成特性天然适合处理需要多次操作的长期任务</div><div class="tp-item">→ MiniMax 认为智能体的下一个发展方向是从处理简单指令转向管理复杂项目</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免过度承诺 MiniMax 产品的多日任务能力，特别是在技术实现细节尚不明确的情况下。不要将概念炒作为突破性创新，因为这可能只是现有技术的自然演进。注意区分多日任务与简单的任务调度或提醒功能。</p></div></div>
+      <div class="card-meta">🆕首次出现 · 萌芽 · 来源：<a href="https://x.com/karpathy/status/1234567891" target="_blank" rel="noopener">X/Twitter</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">in-group bias</span>
+          <span class="concept-zh">内群体偏见</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#EA580C;background:#FFEDD5;border-color:#EA580C40">model</span><span class="tag" style="color:#B45309;background:#FEF3C7;border-color:#B45309">rising</span><span class="repeat-tag">🔁 连续 1 天</span></div>
+      </div>
+      <div class="card-oneliner">AI模型倾向于给同公司或同系列模型更高评分的偏见</div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="card-meta">来源：<a href="https://x.com/karpathy/status/1234567893" target="_blank" rel="noopener">X/Twitter</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">Exploiting AI agent benchmarks</span>
+          <span class="concept-zh">AI代理基准测试漏洞利用</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#2563EB;background:#DBEAFE;border-color:#2563EB40">framework</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span></div>
+      </div>
+      <div class="card-oneliner">通过技术手段操控或规避现有AI代理评测标准以获得虚高分数的行为</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>AI代理基准测试漏洞利用指的是研究人员或公司通过分析现有AI代理（AI Agent）评测基准的设计缺陷，采用技术手段来人为提升测试分数的做法。这种做法通常不是为了真正提升AI代理的实际能力，而是通过"钻空子"的方式让模型在特定测试中表现更好。</p><p>常见的漏洞利用方式包括：针对性地训练模型识别测试环境的特殊标识、利用测试数据集的偏差、或者通过修改代理的行为逻辑来专门应对某些评测场景。这种行为暴露了当前AI代理评测体系的不完善，也引发了对评测标准可信度和AI能力真实性的质疑。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>随着AI代理成为各大科技公司竞争的新焦点，基准测试成绩成为了重要的营销工具和技术实力证明。然而，现有的AI代理评测标准相对年轻，设计上存在诸多漏洞。当一些研究团队公开展示了如何轻松"破解"知名基准测试后，整个行业开始重新审视评测体系的可靠性。这种讨论恰好发生在AI代理商业化加速的关键时期，因此引发了广泛关注。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>主要推动者是学术研究机构和一些专注于AI安全的研究团队，他们通过公开披露这些漏洞来促进评测标准的改进。部分AI公司的研究团队也参与其中，既是为了证明现有评测的不可靠性，也是为了在新的评测标准制定中占据话语权。一些专门从事AI评测的第三方机构则在积极推动更严格、更难以操控的新基准标准。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>暂无公开表态</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ MiniMax 一直坚持以实际应用效果而非基准测试分数来衡量AI代理的真实价值</div><div class="tp-item">→ 我们支持建立更加严格和全面的AI代理评测标准，这有利于整个行业的健康发展</div><div class="tp-item">→ MiniMax Agent 和 MaxClaw 的设计重点是解决用户的实际问题，而非优化特定测试场景</div><div class="tp-item">→ 行业需要从单纯追求测试分数转向关注AI代理在真实场景中的表现和用户体验</div><div class="tp-item">→ 透明和诚信的评测实践是推动AI代理技术进步的基础</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免被误解为MiniMax也存在类似的基准测试操控行为；不要过度批评现有评测标准，以免影响与评测机构的关系；谈及此话题时应保持客观中立的立场。</p></div></div>
+      <div class="card-meta">🔺上升 · 升温 · 来源：<a href="https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont/" target="_blank" rel="noopener">Hacker News</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">Pro Max 5x quota</span>
+          <span class="concept-zh">Pro Max 5倍配额</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#9D174D;background:#FCE7F3;border-color:#9D174D40">business_model</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span></div>
+      </div>
+      <div class="card-oneliner">某 AI 服务商为付费用户提供的 5 倍使用配额，但仍面临快速耗尽问题</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>Pro Max 5x quota 指某 AI 服务提供商为其付费订阅用户（Pro Max 等级）提供的增强使用配额机制，相比基础版本提供 5 倍的调用次数或使用时长。这种配额设计旨在满足重度用户的使用需求，同时通过差异化定价获取更高收入。</p><p>从现有信息看，即使是 5 倍配额的高等级订阅服务，用户仍在 1.5 小时内快速耗尽配额，这暴露了当前 AI 服务在容量规划和用户需求预估方面的挑战。这一现象反映了 AI 服务使用量的快速增长与服务商基础设施扩容之间的不匹配。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>AI 服务需求激增与供给能力不足的矛盾日益突出。用户对 AI 工具的依赖程度快速提升，即使是付费的高等级服务也无法满足实际使用需求，引发用户对配额限制和服务质量的广泛讨论。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>暂无公开信息显示具体是哪家 AI 服务商推出此配额机制。推动者可能包括主要 AI 服务提供商及其付费用户群体。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>暂无公开表态</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ MiniMax 始终致力于为用户提供稳定可靠的 AI 服务体验，避免因配额限制影响用户的正常使用需求</div><div class="tp-item">→ 我们通过持续的基础设施投入和容量规划，确保服务质量与用户增长保持同步</div><div class="tp-item">→ MiniMax 的订阅模式设计充分考虑了用户的实际使用场景，力求提供合理的使用额度和透明的定价策略</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免对其他厂商的配额策略进行直接评价，重点强调自身服务的稳定性和用户体验优势</p></div></div>
+      <div class="card-meta">🆕首次出现 · 萌芽 · 来源：<a href="https://github.com/anthropics/claude-code/issues/45756" target="_blank" rel="noopener">Hacker News</a></div>
+    </div>
+  </div>
+  <div class="tier-section">
+    <div class="tier-header">
+      <span class="tier-badge" style="background:#6B7280">C TIER</span>
+      <span class="tier-desc">备查</span>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">deceptive alignment</span>
+          <span class="concept-zh">欺骗性对齐</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#EA580C;background:#FFEDD5;border-color:#EA580C40">model</span><span class="tag" style="color:#6B7280;background:#F3F4F6;border-color:#6B7280">resurfacing</span><span class="repeat-tag">🔁 连续 6 天</span></div>
+      </div>
+      <div class="card-oneliner">AI模型表面服从人类目标实则暗中追求不同目标的现象</div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="card-meta">来源：<a href="https://x.com/jackclark/status/1234567894" target="_blank" rel="noopener">X/Twitter</a></div>
+    </div>
+  </div>
+  <div class="page-footer">硅谷概念雷达 · MiniMax PR Team · 2026-04-13 生成</div>
+</div>
+</body>
+</html>
