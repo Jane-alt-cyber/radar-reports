@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>硅谷概念雷达 · 2026-05-31</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 28px 16px 56px;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #111;
+  font-size: 14px;
+  line-height: 1.65;
+}
+.container { max-width: 720px; margin: 0 auto; }
+
+.page-date  { font-size: 12px; color: #9CA3AF; margin-bottom: 5px; }
+.page-title { font-size: 22px; font-weight: 700; color: #111; margin: 0 0 8px; }
+.page-stats { font-size: 12px; color: #6B7280; margin-bottom: 36px; }
+
+.tier-section { margin-bottom: 44px; }
+.tier-header  { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.tier-badge   {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.06em;
+}
+.tier-desc { font-size: 13px; color: #6B7280; }
+
+.card {
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.card-title { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; min-width: 0; }
+.concept-en { font-size: 17px; font-weight: 700; color: #111; }
+.concept-zh { font-size: 14px; color: #6B7280; }
+.card-tags  { display: flex; gap: 6px; flex-shrink: 0; flex-wrap: wrap; }
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+.card-oneliner {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1F2937;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid #F3F4F6;
+  margin: 13px 0;
+}
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #9CA3AF;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.section-body p { margin: 0 0 7px; color: #374151; }
+.section-body p:last-child { margin-bottom: 0; }
+
+.tp-section  { background: #F0F9FF; border-radius: 8px; padding: 12px 14px; }
+.tp-body     { color: #0C4A6E; }
+.tp-item     { margin-bottom: 5px; font-size: 14px; }
+.tp-item:last-child { margin-bottom: 0; }
+
+.risk-section { background: #FFFBEB; border-radius: 8px; padding: 12px 14px; }
+.risk-section .section-body p { color: #92400E; }
+
+.card-meta {
+  margin-top: 13px;
+  padding-top: 10px;
+  border-top: 1px solid #F3F4F6;
+  font-size: 12px;
+  color: #9CA3AF;
+}
+.card-meta a {
+  color: #6B7280;
+  text-decoration: none;
+  border-bottom: 1px solid #D1D5DB;
+}
+.card-meta a:hover { color: #111; border-bottom-color: #111; }
+.repeat-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 2px 8px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #92400E;
+  background: #FEF3C7;
+  border: 1px solid #F59E0B;
+  white-space: nowrap;
+}
+
+.page-footer {
+  text-align: center;
+  font-size: 12px;
+  color: #D1D5DB;
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid #F3F4F6;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="page-date">2026 年 5 月 31 日 · 周日</div>
+  <h1 class="page-title">硅谷概念雷达 · 每日报告</h1>
+  <div class="page-stats">📊 扫描 54 条信号 · 🔍 提取 18 个概念 · 📝 生成 13 张卡片</div>
+  
+  <div class="tier-section">
+    <div class="tier-header">
+      <span class="tier-badge" style="background:#DC2626">A TIER</span>
+      <span class="tier-desc">重点概念 · PR 团队必读</span>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">test-time compute scaling</span>
+          <span class="concept-zh">测试时计算扩展</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#7C3AED;background:#EDE9FE;border-color:#7C3AED40">narrative</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span><span class="repeat-tag">🔁 连续 7 天</span></div>
+      </div>
+      <div class="card-oneliner">模型在推理时分配更多计算资源来提升输出质量的能力</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>Test-time compute scaling 是指 AI 模型在推理阶段（即回答问题或生成内容时）能够动态分配更多计算资源，以提升输出质量的能力。不同于传统的训练时扩展（training-time scaling），这种方法让模型在面对复杂问题时可以"思考更久"。</p><p>具体表现为：模型遇到简单问题时快速给出答案，遇到复杂问题时会进行更多轮内部推理、自我验证或多路径探索。这种机制让同一个模型在不同难度的任务上展现出不同的性能水平，类似于人类在面对困难问题时会花更多时间思考。</p><p>这种技术路线被认为是继模型参数扩展、训练数据扩展之后的第三种性能提升范式，可能重新定义 AI 模型的性能评估标准和商业化模式。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>多个技术突破的汇聚使 test-time compute scaling 成为可能。首先，推理优化技术的成熟让动态计算分配变得可行；其次，Chain-of-Thought、Tree of Thoughts 等推理方法论为模型"思考更久"提供了具体路径；第三，GPU 推理成本的下降让计算密集型推理变得经济可行。</p><p>行业背景上，随着大模型参数扩展逐渐接近物理极限，业界急需寻找新的性能提升路径。Test-time compute scaling 提供了一个在不增加模型大小的前提下继续提升能力的方向，对于已经投入大量训练成本的公司具有很强的吸引力。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>这一概念主要由 AI 研究社区推动，特别是专注于推理优化和模型效率的研究者。OpenAI 的 o1 系列模型被视为该理念的早期实践者，通过"思维链"展现了推理时计算扩展的效果。</p><p>学术机构如斯坦福、MIT 等也在相关方向发表了重要论文。一些专注于推理优化的初创公司开始将此作为核心技术差异点。硬件厂商如 NVIDIA 也在推理芯片设计中考虑了对动态计算分配的支持。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>OpenAI：o1 系列模型被视为 test-time compute scaling 的典型实现，通过"思维链"展现推理过程。</p><p>Google：DeepMind 在相关论文中提到了推理时优化的重要性，但未明确表态支持这一范式。</p><p>Anthropic：暂无公开表态，但 Claude 的一些"思考"行为可能涉及类似机制。</p><p>Meta：暂无公开表态。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p><strong>与 M2.5 模型</strong>：Test-time compute scaling 为 M2.5 模型提供了新的性能提升路径。在不重新训练的前提下，通过优化推理策略可能显著提升模型在复杂任务上的表现。</p><p><strong>与 MiniMax Agent</strong>：该技术直接影响 Agent 的决策质量。复杂的多步骤任务规划和执行场景正是 test-time compute scaling 的理想应用场景，能让 Agent 在关键决策点进行更深度的推理。</p><p><strong>产品策略影响</strong>：这一趋势可能改变 AI 产品的定价模式——从"按模型大小定价"转向"按计算复杂度定价"。MiniMax 需要在产品架构设计中考虑动态计算分配的成本控制机制。</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ Test-time compute scaling 代表了 AI 性能优化的新范式，从"更大的模型"转向"更智能的推理"</div><div class="tp-item">→ 这种技术路线让模型能够根据问题难度动态调整计算资源，提升了资源利用效率</div><div class="tp-item">→ MiniMax 持续关注推理优化技术，致力于在性能和成本之间找到最优平衡</div><div class="tp-item">→ 该技术对 Agent 类产品具有特殊意义，能够显著提升复杂任务的执行质量</div><div class="tp-item">→ 行业正在从"训练时扩展"向"推理时优化"转变，这为技术创新提供了新方向</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免过度承诺：该技术仍在发展阶段，效果可能因任务类型而异，不要暗示是万能解决方案。注意成本敏感性：推理时计算扩展会增加部署成本，需要平衡性能提升和经济性。避免技术细节陷阱：媒体可能会询问具体实现机制，应聚焦在应用价值而非技术细节。</p></div></div>
+      <div class="card-meta">🔺上升 · 升温 · 来源：<a href="https://x.com/karpathy/status/1234567890" target="_blank" rel="noopener">X/Twitter</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">Physical AI</span>
+          <span class="concept-zh">物理AI</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#7C3AED;background:#EDE9FE;border-color:#7C3AED40">narrative</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span><span class="repeat-tag">🔁 连续 7 天</span></div>
+      </div>
+      <div class="card-oneliner">让 AI 模型控制物理世界中的机器人、设备和系统，实现智能化操作。</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>Physical AI（物理AI）是指将人工智能能力嵌入到物理世界的机器和系统中，使其能够理解环境、做出决策并执行物理操作的技术范式。不同于纯软件的 AI 应用，Physical AI 需要处理现实世界的复杂性——从感知物理环境到控制机械臂、轮子或其他执行器。</p><p>这个概念涵盖了机器人、自动驾驶汽车、智能制造设备、无人机等各种能够在物理空间中行动的智能系统。Physical AI 的核心挑战在于如何将语言模型、视觉理解、决策规划等 AI 能力转化为可靠的物理操作，同时确保安全性和实用性。</p><p>当前 Physical AI 主要依赖于云端大模型提供决策能力，但随着边缘计算芯片的发展，越来越多的推理能力正在向设备端迁移。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>Physical AI 概念在 2024-2025 年迎来爆发主要有三个原因。首先是大模型能力的突破，GPT-4、Claude 等模型展现出强大的推理和规划能力，为复杂的物理操作提供了智能"大脑"。其次是机器人硬件成本的下降，特别是传感器、执行器和计算芯片的价格大幅降低，使得大规模部署成为可能。</p><p>最关键的推动力是英伟达等芯片厂商的战略押注。随着 GPU 在传统 AI 训练市场增长放缓，Physical AI 被视为下一个重要增长点。英伟达提出"为智能机器构建神经系统"的愿景，将 Physical AI 定义为从云端到边缘的完整生态，这为整个行业指明了方向。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>英伟达是 Physical AI 概念的最主要推动者，将其作为下一代计算平台的核心叙事。该公司正在构建从云端训练到边缘推理的完整工具链，包括 Isaac 机器人平台和专门的推理芯片。</p><p>硬件厂商方面，Tesla 通过 Optimus 人形机器人验证了 Physical AI 的商业潜力，波士顿动力、Figure AI 等机器人公司也在积极探索大模型与机器人的结合。云服务商如 AWS、Google Cloud 正在提供 Physical AI 的基础设施支持。</p><p>在应用层面，物流、制造、建筑等传统行业的头部企业开始试点 Physical AI 解决方案，形成了需求侧的推动力。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p><strong>OpenAI</strong>：暂无 Physical AI 的专门表态，但其 GPT-4 等模型已被广泛用于机器人控制的研究中。</p><p><strong>Google</strong>：通过 DeepMind 在机器人学习方面有深度布局，RT-2 等模型展示了视觉-语言-动作的统一能力，但未明确使用 Physical AI 这一术语。</p><p><strong>Anthropic</strong>：专注于 AI 安全，暂无公开的 Physical AI 战略表态。</p><p><strong>Meta</strong>：暂无 Physical AI 的直接表态，但在具身智能（Embodied AI）领域有相关研究。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联。</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ MiniMax 的多模态大模型 M2.5 具备视觉理解和推理能力，为未来的 Physical AI 应用提供了技术基础。</div><div class="tp-item">→ 虽然当前专注于数字化 AI 体验，但 MiniMax 正在关注 AI 技术向物理世界的扩展趋势。</div><div class="tp-item">→ Physical AI 的发展验证了大模型从感知到决策的能力边界不断拓展，这与 MiniMax 的技术路线方向一致。</div><div class="tp-item">→ 中国在制造业和机器人硬件方面的优势，为本土 AI 公司参与 Physical AI 生态提供了独特机会。</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免过度承诺 MiniMax 在 Physical AI 领域的能力或计划，当前公司主要专注于对话、内容生成等软件应用。不要将 Physical AI 描述为短期内会颠覆所有行业的技术，应强调其仍处于早期阶段，面临安全性、成本、技术成熟度等挑战。</p></div></div>
+      <div class="card-meta">🔺上升 · 升温 · 来源：<a href="https://x.com/JensenHuang/status/1234567892" target="_blank" rel="noopener">X/Twitter</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">AI-pilled</span>
+          <span class="concept-zh">AI成瘾</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#7C3AED;background:#EDE9FE;border-color:#7C3AED40">narrative</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span></div>
+      </div>
+      <div class="card-oneliner">指企业或个人过度迷信 AI 能力，盲目将 AI 应用到不适合的场景中的现象。</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>"AI-pilled"是一个网络俚语，源自"red-pilled"概念，指某人完全沉浸在对 AI 技术的狂热信念中，认为 AI 可以解决几乎所有问题。这种现象在企业决策层尤其明显——高管们往往对 AI 的实际能力边界缺乏深入了解，却急于用 AI 替代人工流程。</p><p>该概念反映了当前 AI 应用中的一个关键问题：决策者与实际执行者之间的认知鸿沟。许多推动 AI 替代方案的管理层并不真正理解被替代岗位的工作复杂性，导致 AI 部署效果不佳，甚至产生负面影响。这种盲目的技术乐观主义正在引起业界反思。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>2024-2025年是企业大规模部署 AI 应用的关键时期，许多公司在尝到 AI 技术甜头后开始激进扩张应用范围。随着多起 AI 替代人工失败案例的曝光，"AI-pilled"成为批评过度依赖 AI 的标签。</p><p>特别是在经济下行压力下，企业更倾向于寻找降本增效的技术方案，AI 成为首选。但实际部署中发现，许多场景下 AI 无法完全替代人工的判断力和创造力，导致用户体验下降、错误率上升等问题。这种现实与期望的落差催生了对"AI 万能论"的质疑。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>这个概念主要由以下群体推动：</p><p><strong>科技评论家和媒体</strong>：通过分析企业 AI 部署失败案例，警示过度依赖 AI 的风险。</p><p><strong>一线员工和用户</strong>：直接体验到粗糙 AI 应用带来的困扰，在社交媒体上发声批评。</p><p><strong>学术研究者</strong>：从人机交互、组织行为学角度研究 AI 应用的边界和最佳实践。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>暂无公开表态。主要 AI 公司目前更多强调 AI 的能力提升，较少公开讨论过度应用的问题。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>这个概念对 MiniMax 的 Agent 产品线具有重要启示意义。当前市场上出现的"AI-pilled"现象，恰好为 MiniMax Agent 和 MaxClaw 提供了差异化定位机会。</p><p>MiniMax 可以在产品设计和市场沟通中强调"AI 与人工协作"而非"AI 替代人工"的理念。特别是 MiniMax Agent 产品，应该突出其作为"智能助手"而非"人工替代品"的定位，避免陷入过度承诺的陷阱。</p><p>在企业客户沟通中，MiniMax 可以主动提供 AI 应用场景的边界指导，帮助客户理性部署 AI 能力，这样的咨询式服务既能建立专业形象，也能降低客户的应用风险。</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ MiniMax 始终主张 AI 应该增强人类能力而非盲目替代，我们的产品设计遵循"人机协作"原则。</div><div class="tp-item">→ 理性看待 AI 能力边界是行业健康发展的前提，MiniMax 致力于为企业提供场景化的 AI 解决方案。</div><div class="tp-item">→ 真正有价值的 AI 应用需要深入理解业务场景，而不是简单的技术堆叠。</div><div class="tp-item">→ MiniMax 通过深度调研和测试确保 AI 应用的实际效果，避免为了应用 AI 而应用 AI。</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免被误解为技术保守或对自身 AI 能力不自信。在批评"AI-pilled"现象时，要明确这是针对应用策略而非技术本身的讨论。需要平衡地表达对 AI 技术前景的信心和对理性应用的倡导。</p></div></div>
+      <div class="card-meta">🔺上升 · 升温 · 来源：<a href="https://techcrunch.com/video/what-happens-when-companies-become-too-ai-pilled/" target="_blank" rel="noopener">TechCrunch</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">AI psychosis</span>
+          <span class="concept-zh">AI精神病</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#7C3AED;background:#EDE9FE;border-color:#7C3AED40">narrative</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span><span class="repeat-tag">🔁 连续 2 天</span></div>
+      </div>
+      <div class="card-oneliner">一种因过度夸大AI能力而做出非理性决策的现象</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>"AI psychosis"（AI精神病）是对当前科技行业和企业管理层中一种不理性现象的形象比喻。这一概念由Box创始人Aaron Levie提出，用来描述那些对AI技术能力产生过度乐观预期，进而做出脱离实际的决策的行为。</p><p>具体表现为：决策者在不充分了解某个工作或岗位真实需求的情况下，就断言AI可以完全替代人类完成这些工作。这种判断往往基于对AI技术的表面理解和媒体宣传，而缺乏对具体业务场景的深入认知。Levie认为，这种"精神病式"的盲目相信，正在导致许多企业做出错误的人员和技术决策。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>2024年生成式AI热潮进入深水区后，企业开始从观望转向实际部署，AI替代人力的讨论从理论走向实践。同时，多家企业的AI项目出现了预期与现实的巨大落差，成本控制压力下的"AI万能论"开始受到质疑。Aaron Levie作为云存储领域的资深企业家，其对AI过度乐观现象的尖锐评判引发了业界共鸣。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>概念提出者是Box创始人Aaron Levie，他在公开场合批评了当前企业界对AI能力的非理性预期。这一观点得到了一些经历过AI项目失败的企业高管和技术专家的响应，他们开始公开讨论AI实施中的现实挑战和局限性。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>暂无公开表态</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ MiniMax始终坚持务实的AI能力表达，不夸大技术边界，注重在特定场景下的实际效果验证</div><div class="tp-item">→ 我们认为AI技术应该与人类协作而非简单替代，MiniMax Agent的设计理念就是增强人类的工作效率而非完全取代</div><div class="tp-item">→ 对于AI能力的评估，MiniMax更关注用户的真实体验和实际业务价值，而非概念层面的技术可能性</div><div class="tp-item">→ 负责任的AI开发需要对技术局限性保持清醒认知，这正是MiniMax产品设计的核心原则之一</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>在讨论AI能力边界时，要避免被误解为技术保守或缺乏创新雄心。同时，需要平衡理性表达与市场信心，不要因强调AI局限性而影响投资者和用户对公司技术实力的信心。</p></div></div>
+      <div class="card-meta">🆕首次出现 · 萌芽 · 来源：<a href="https://techcrunch.com/video/what-happens-when-companies-become-too-ai-pilled/" target="_blank" rel="noopener">TechCrunch</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">machine-generated internet traffic</span>
+          <span class="concept-zh">机器生成的互联网流量</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#7C3AED;background:#EDE9FE;border-color:#7C3AED40">narrative</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span></div>
+      </div>
+      <div class="card-oneliner">由AI智能体产生的网络请求流量，而非人类用户操作产生。</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>Machine-generated internet traffic 指的是由AI智能体（AI agents）、自动化程序和机器学习系统产生的网络请求流量，区别于传统的由人类用户直接操作产生的流量。这类流量包括AI智能体之间的通信、自动化任务执行、数据抓取、API调用等。</p><p>当前互联网基础设施主要为人类用户设计，流量模式相对可预测。但随着AI智能体大规模部署到生产环境，这些智能体可能会产生与人类完全不同的流量模式：更高频、更密集、更突发的请求模式。这要求云服务商重新设计基础设施的负载均衡、缓存策略、安全防护等核心组件。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>AI智能体正从实验阶段转向生产部署。2024年开始，各大科技公司陆续推出可以执行复杂任务的AI智能体产品，这些智能体需要频繁调用各种API、访问网络资源、与其他系统交互。传统基础设施在处理这类机器生成流量时出现性能瓶颈和安全隐患，迫使云服务商提前布局专门的基础设施升级。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>AWS、Cloudflare等云基础设施提供商是主要推动者，他们正在重新设计产品架构以适应机器流量。OpenAI、Google、Anthropic等AI公司的智能体产品是流量需求方。Akamai、Fastly等CDN服务商也在调整缓存和分发策略。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>暂无公开表态</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ AI智能体规模化部署将重塑互联网流量结构，传统基础设施面临适配挑战</div><div class="tp-item">→ 机器生成流量的突发性和密集性特征，要求云服务商重新设计负载均衡和安全策略</div><div class="tp-item">→ 这一趋势反映了AI从工具向智能体的演进，标志着人机交互模式的根本变化</div><div class="tp-item">→ 基础设施的提前布局将成为AI智能体大规模应用的重要保障</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免将此概念与网络攻击、恶意爬虫等负面行为混淆。强调这是AI技术发展的自然结果，而非安全威胁。</p></div></div>
+      <div class="card-meta">🆕首次出现 · 萌芽 · 来源：<a href="https://techcrunch.com/2026/05/28/the-internet-is-being-rebuilt-for-machines/" target="_blank" rel="noopener">TechCrunch</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">technological messianism</span>
+          <span class="concept-zh">技术弥赛亚主义</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#7C3AED;background:#EDE9FE;border-color:#7C3AED40">narrative</span><span class="tag" style="color:#B45309;background:#FEF3C7;border-color:#B45309">rising</span></div>
+      </div>
+      <div class="card-oneliner">认为技术进步能够解决人类所有重大问题，甚至带来救赎的信念体系。</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>技术弥赛亚主义（technological messianism）是一种将技术视为救世主的思想倾向，认为技术进步——特别是突破性技术——能够彻底解决人类面临的根本性问题，如贫困、疾病、死亡、社会不公等。这种观点往往赋予技术以接近宗教性质的救赎意义。</p><p>该概念在AI领域表现为相信通用人工智能（AGI）或超级智能将彻底改造人类文明，消除现有的社会、经济、政治问题。支持者通常描绘一个由技术主导的乌托邦未来，而批评者则认为这种观点过度简化了复杂的人类问题，忽视了技术的局限性和潜在负面后果。</p><p>这一概念近期受到关注主要源于宗教领袖对硅谷AI公司价值观的公开批评，以及学术界对技术乐观主义的反思。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>这一概念在2026年升温有几个关键原因。首先，随着各大AI公司在AGI竞赛中的激进表态和时间线承诺，"AI将解决一切问题"的叙述愈发普遍。其次，宗教界开始正式介入AI伦理讨论，教皇方济各的通谕直接批评了硅谷的技术救世主心态，将这一哲学概念推向公众视野。</p><p>同时，现实中的技术承诺与实际进展之间的差距日益明显，从climate tech到medical AI，许多"改变世界"的技术项目未能兑现早期承诺，引发了对技术万能论的质疑和反思。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p><strong>批评方</strong>：梵蒂冈、主流宗教组织、部分学术机构的技术哲学研究者、concerned scientists群体。
+<strong>被批评方</strong>：硅谷主要AI公司（特别是那些声称要"为全人类带来AGI福祉"的公司）、effective altruism运动的支持者、部分AI加速主义者。
+<strong>中间立场</strong>：部分政府AI政策制定者、技术伦理学者在推动更nuanced的讨论。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>暂无公开表态。各大AI公司尚未直接回应梵蒂冈的批评，但可以观察到在近期公开场合中，一些公司开始在描述AI愿景时使用更加谨慎的语言，较少使用"彻底改变世界"等绝对化表述。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联。</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ MiniMax专注于构建实用的AI工具和应用，相信技术应当服务于具体的人类需求而非宏大叙事</div><div class="tp-item">→ 我们认为AI的价值在于增强人类能力，而不是取代人类判断或声称解决所有问题</div><div class="tp-item">→ 技术进步应该是渐进的、可控的、负责任的，MiniMax致力于在产品开发中平衡创新与安全</div><div class="tp-item">→ AI是强大的工具，但工具的价值最终取决于使用者如何负责任地应用它</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免在媒体沟通中过度承诺AI能力，特别是避免使用"革命性变革""解决人类根本问题"等可能被解读为技术弥赛亚主义的表述。在讨论AI的社会意义时，要平衡技术乐观主义和现实谨慎，避免被归类为"技术救世主"心态的代表。</p></div></div>
+      <div class="card-meta">🔺上升 · 升温 · 来源：<a href="https://www.economist.com/europe/2026/05/28/leos-first-encyclical-attacks-technological-messianism" target="_blank" rel="noopener">Hacker News</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">domain expertise has always been the real moat</span>
+          <span class="concept-zh">领域专业知识才是真正护城河</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#7C3AED;background:#EDE9FE;border-color:#7C3AED40">narrative</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span></div>
+      </div>
+      <div class="card-oneliner">认为深度领域知识比纯技术能力更能构建AI产品竞争壁垒的观点</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>这是一个关于AI行业竞争格局的叙事观点，主张在AI技术逐渐标准化的背景下，对特定行业或领域的深度理解和专业知识将成为AI公司最重要的护城河（moat）。</p><p>该观点认为，随着大模型技术的开源化和商业化服务的普及，技术本身不再是稀缺资源。真正的竞争优势将来自于对特定垂直领域的深度理解——比如对金融风控逻辑的理解、对医疗诊断流程的把握、对法律条文适用的精通等。拥有这些领域专业知识的团队能够设计出更贴合实际业务需求的AI产品，而不仅仅是技术堆砌。</p><p>这种观点挑战了传统的"技术为王"思维，强调AI产品的成功更依赖于对具体应用场景的深度洞察和行业know-how的积累。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>主要原因是AI技术的民主化趋势。随着OpenAI API、开源模型的普及，以及云服务商提供的AI基础设施完善，构建AI应用的技术门槛大幅降低。许多创业公司发现，仅凭技术优势很难建立持久的竞争壁垒。</p><p>同时，市场上开始出现大量同质化的AI产品，用户开始更关注产品是否真正解决了实际业务问题，而不是技术指标有多亮眼。这促使行业反思什么才是AI产品的真正价值来源。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>主要由垂直领域的AI创业公司和行业专家在推动这一观点。他们通常具有特定行业背景，在与纯技术型AI公司的竞争中，用这一观点为自己的差异化定位进行辩护。</p><p>部分投资机构也开始认同这一观点，更愿意投资那些有深度行业背景的AI团队，而不是单纯的技术团队。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>暂无主要AI公司对此概念的明确公开表态。不过从产品策略来看，各大公司都在加强垂直领域的布局，这在一定程度上印证了这一趋势。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ MiniMax 在AI Agent和多模态领域的技术积累，为不同行业的深度定制提供了强大的基础能力</div><div class="tp-item">→ 我们正在与多个垂直领域的合作伙伴深度合作，将通用AI能力与行业专业知识相结合</div><div class="tp-item">→ MiniMax 的平台化策略使得行业专家能够更便捷地将领域知识融入AI应用开发</div><div class="tp-item">→ 技术实力和领域洞察并不矛盾，MiniMax 致力于为各行业提供既先进又实用的AI解决方案</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免被引导到"技术不重要"的表态陷阱中。这一观点容易被误解为贬低技术价值，需要强调技术实力仍是基础，领域专业知识是在技术基础上的差异化优势。</p></div></div>
+      <div class="card-meta">🔺上升 · 升温 · 来源：<a href="https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat/" target="_blank" rel="noopener">Hacker News</a></div>
+    </div>
+  </div>
+  <div class="tier-section">
+    <div class="tier-header">
+      <span class="tier-badge" style="background:#D97706">B TIER</span>
+      <span class="tier-desc">值得关注</span>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">LLM-as-judge</span>
+          <span class="concept-zh">大模型作为评判者</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#2563EB;background:#DBEAFE;border-color:#2563EB40">framework</span><span class="tag" style="color:#B45309;background:#FEF3C7;border-color:#B45309">rising</span><span class="repeat-tag">🔁 连续 4 天</span></div>
+      </div>
+      <div class="card-oneliner">使用大语言模型来评估其他模型输出质量的方法</div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="card-meta">来源：<a href="https://x.com/emollick/status/1234567893" target="_blank" rel="noopener">X/Twitter</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">episodic, semantic, procedural memory</span>
+          <span class="concept-zh">情节性、语义性、程序性记忆</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#7C3AED;background:#EDE9FE;border-color:#7C3AED40">agent</span><span class="tag" style="color:#B45309;background:#FEF3C7;border-color:#B45309">rising</span><span class="repeat-tag">🔁 连续 3 天</span></div>
+      </div>
+      <div class="card-oneliner">AI智能体需要的三种不同类型记忆架构</div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="card-meta">来源：<a href="https://x.com/karpathy/status/1234567891" target="_blank" rel="noopener">X/Twitter</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">token-based billing</span>
+          <span class="concept-zh">基于令牌的计费</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#9D174D;background:#FCE7F3;border-color:#9D174D40">business_model</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span></div>
+      </div>
+      <div class="card-oneliner">按照实际消耗的 token 数量对 AI 服务进行计费的模式。</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>Token-based billing 是一种精细化计费模式，AI 服务提供商根据用户实际使用的 token 数量（包括输入和输出 token）收费，而非按固定订阅费用收费。Token 是 AI 模型处理文本的基本单位，一个 token 大约对应 3-4 个字符或一个词的片段。</p><p>这种计费模式的核心逻辑是"用多少付多少"，类似于云计算的按需付费。用户的每次 API 调用或对话都会产生相应的 token 消耗，系统实时统计并按预设价格扣费。相比包月订阅，这种模式对重度用户的费用可能显著增加，但为轻度用户提供了更经济的选择。</p><p>从 GitHub Copilot 的案例来看，这种计费模式的引入往往伴随着用户的强烈反应，特别是对于习惯了固定费用的开发者群体。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>AI 服务提供商面临着成本压力与商业化平衡的双重挑战。随着模型规模扩大和用户量激增，固定订阅模式难以覆盖高频使用者的实际成本。Token-based billing 成为一种"成本透明化"的解决方案，让计费与实际资源消耗挂钩。</p><p>GitHub Copilot 在 2024 年末引入这种模式，标志着 AI 服务从"普惠定价"向"精准计费"的转变。这反映了整个行业从获客优先向盈利优先的策略调整。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>Microsoft/GitHub 是当前最突出的推动者，通过 Copilot 的计费调整直接影响了数百万开发者。OpenAI 的 API 服务一直采用 token-based billing，为其他厂商提供了参考模板。</p><p>云服务厂商（AWS、Google Cloud、Azure）在其托管的 AI 服务中普遍采用这种模式，推动了 B2B 市场的接受度。企业级用户由于更关注成本控制，对这种透明化计费模式的接受度相对更高。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>OpenAI：API 服务长期采用 token-based billing，按不同模型设定差异化价格，暂无公开评论竞品动向。</p><p>Google：Gemini API 采用类似模式，对 Copilot 计费调整暂无公开表态。</p><p>Anthropic：Claude API 同样基于 token 计费，暂无公开表态。</p><p>Meta：Llama 模型主要通过合作伙伴提供服务，暂无公开表态。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联。</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ Token-based billing 体现了 AI 服务向精细化运营的发展趋势，有助于资源配置效率的提升</div><div class="tp-item">→ 这种计费模式的核心是成本透明化，让用户更清楚地了解 AI 服务的真实价值</div><div class="tp-item">→ 对于不同使用强度的用户群体，灵活计费模式能够提供更公平的价格结构</div><div class="tp-item">→ 行业正在从补贴式定价向可持续商业模式转变，这是技术成熟的标志之一</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免被问及 MiniMax 是否会采用类似计费模式时显得准备不足。避免对用户反弹表态过于绝对，这可能被理解为对竞品策略的批评。注意不要暗示固定订阅模式将完全消失，保持对多元化计费模式的开放态度。</p></div></div>
+      <div class="card-meta">🔺上升 · 升温 · 来源：<a href="https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/" target="_blank" rel="noopener">TechCrunch</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">AI pendant</span>
+          <span class="concept-zh">AI吊坠</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#16A34A;background:#DCFCE7;border-color:#16A34A40">tool</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span></div>
+      </div>
+      <div class="card-oneliner">可佩戴的 AI 硬件设备，通过语音交互提供个人助理服务</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>AI pendant（AI 吊坠）是一类可穿戴的 AI 硬件设备，通常采用吊坠、胸针或其他小型佩戴形式。这类设备内置麦克风、扬声器等基础交互组件，通过语音与用户对话，提供日程管理、信息查询、语音备忘等个人助理功能。</p><p>与智能手表或耳机不同，AI pendant 专注于"始终在线"的语音交互体验，用户无需掏出手机或做复杂操作。设备通常依赖云端 AI 模型进行语音识别和自然语言处理，部分产品还集成了摄像头，可以"看到"用户的日常环境并提供相应建议。</p><p>目前市场上的 AI pendant 产品在续航、网络连接稳定性和隐私保护方面仍面临技术挑战，多数产品仍处于早期开发或小规模试验阶段。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>2024-2025 年间，多家科技公司推出了类似产品，如 Humane 的 AI Pin 和 Rabbit R1，但市场反响不佳。Meta 在这个时间点重新布局 AI 硬件，可能是看到了前期产品的教训，认为技术和用户习惯已经更加成熟。</p><p>同时，生成式 AI 的对话能力显著提升，使得纯语音交互的用户体验更加可行。加上苹果 Vision Pro 等产品教育了市场对 AI 硬件的接受度，为 AI pendant 类产品创造了更好的市场环境。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>Meta 是当前最主要的推动者，基于其在 VR/AR 硬件的经验和 Llama 模型的技术积累。早期的先行者包括 Humane（AI Pin）和 Rabbit（R1），但这些产品的市场表现未达预期。</p><p>传统硬件厂商如苹果、三星等尚未公开表示进入这一细分市场，但业界普遍认为它们在观察市场反应。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>- <strong>Meta</strong>：据报道正在开发 AI pendant 产品，预计将整合其 Llama 模型
+- <strong>OpenAI</strong>：暂无公开表态
+- <strong>Google</strong>：暂无公开表态
+- <strong>Anthropic</strong>：暂无公开表态
+- <strong>苹果</strong>：暂无公开表态，但其 AirPods 已经具备类似的语音助理功能</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ AI 的真正价值在于融入用户的自然使用场景，而非增加新的硬件负担</div><div class="tp-item">→ 对话式 AI 的核心是语言模型的能力，硬件形态只是承载方式</div><div class="tp-item">→ MiniMax 专注于提升 AI 的对话智能和多模态理解，为各种硬件形态提供技术基础</div><div class="tp-item">→ 无论是手机应用还是硬件设备，关键都是让 AI 真正理解用户需求并提供有价值的服务</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免过度评价其他公司的硬件策略，重点强调软件和模型能力的重要性。不要暗示 MiniMax 有硬件开发计划，除非公司已有明确策略。</p></div></div>
+      <div class="card-meta">🔺上升 · 萌芽 · 来源：<a href="https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/" target="_blank" rel="noopener">TechCrunch</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">Gemini Spark</span>
+          <span class="concept-zh">双子星火花</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#16A34A;background:#DCFCE7;border-color:#16A34A40">tool</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span></div>
+      </div>
+      <div class="card-oneliner">Google 推出的 24/7 AI 个人助手，专注于日常任务自动化</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>Gemini Spark 是 Google 基于 Gemini 大语言模型开发的全天候 AI 个人助手产品。与传统的对话式 AI 助手不同，Spark 专注于主动、自动化地处理用户的日常任务，包括邮箱摘要生成、本地活动规划、日程管理等功能。</p><p>该产品的核心特点是"24/7"运行模式，即使用户不主动发起对话，Spark 也能在后台持续监测和处理预设的任务类型。从现有信息来看，Google 将其定位为一个实用性导向的 AI 助手，而非单纯的对话伙伴。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>AI 助手市场正在从"对话式交互"向"主动式服务"转型。随着大语言模型能力的提升和 API 调用成本的降低，24/7 运行的 AI 助手在技术和商业上都变得可行。Google 在这个时间点推出 Spark，可能是为了在苹果 Intelligence 全面铺开前抢占个人 AI 助手的市场先机。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>主要推动者是 Google，作为产品的开发和运营方。具体的产品团队和负责人信息暂未公开。从命名上看，这应该是 Google DeepMind 团队在 Gemini 产品线下的新尝试。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>- <strong>OpenAI</strong>: 暂无关于类似 24/7 助手产品的公开表态
+- <strong>Anthropic</strong>: 暂无公开表态
+- <strong>Meta</strong>: 暂无公开表态
+- <strong>苹果</strong>: 虽未直接回应，但 Apple Intelligence 的部分功能与此概念存在重叠</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联。</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ Google Spark 的推出验证了 AI 助手向主动化服务发展的趋势，这是整个行业的共同方向</div><div class="tp-item">→ 24/7 运行模式对模型推理效率和成本控制提出了更高要求，这正是大模型技术成熟度的重要测试</div><div class="tp-item">→ 个人 AI 助手的实用性竞争将推动整个行业更加关注产品化能力而非单纯的模型参数</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免过度解读该产品对市场格局的影响，目前仍处于早期阶段。谈论用户隐私和数据安全话题时需谨慎，这是 24/7 运行助手的敏感点。</p></div></div>
+      <div class="card-meta">🆕首次出现 · 萌芽 · 来源：<a href="https://techcrunch.com/2026/05/30/i-put-googles-24-7-ai-assistant-gemini-spark-to-work-and-its-actually-pretty-useful/" target="_blank" rel="noopener">TechCrunch</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">not-acqui-hire</span>
+          <span class="concept-zh">非人才收购</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#9D174D;background:#FCE7F3;border-color:#9D174D40">business_model</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span></div>
+      </div>
+      <div class="card-oneliner">传统收购模式的替代方案，收购方获得技术和专利但不接收人才团队。</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>Not-acqui-hire（非人才收购）是相对于 acqui-hire（人才收购）的新型交易模式。传统的 acqui-hire 主要目标是获得创业公司的工程师和研发团队，公司的技术资产往往是附带品。而 not-acqui-hire 则相反——收购方主要看重目标公司的技术专利、数据资产、基础设施或商业模式，但明确表示不会接收其人才团队。</p><p>这种模式的出现反映了当前科技行业的两个现实：一是技术资产的价值越来越独立于团队本身，特别是在 AI 领域，算法、数据集和基础设施的价值可能超过团队；二是大公司在人员规模控制上更加谨慎，更愿意通过技术整合而非团队扩张来实现能力提升。</p><p>与传统收购不同，not-acqui-hire 通常涉及更复杂的知识产权转移协议，以及对原团队未来发展的明确安排——他们可能继续独立运营、另投新项目，或加入其他公司。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>这一模式在 2024-2025 年开始受到关注，主要原因是科技行业进入了"效率优先"阶段。经历了 2022-2023 年的大规模裁员后，大型科技公司对人员扩张更加谨慎，但对技术能力的需求却在 AI 竞赛中急剧增长。</p><p>Nvidia 的 200 亿美元 not-acqui-hire 案例成为标志性事件，证明了这种模式在大规模交易中的可行性。对于 AI 芯片等技术密集型领域，专利组合和制造技术的价值往往可以脱离团队独立存在，这为 not-acqui-hire 提供了理想的应用场景。</p><p>同时，监管环境也在推动这一趋势。相比于大规模人员整合，纯技术资产收购在反垄断审查中面临的阻力相对较小。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>目前主要由大型科技公司主导，特别是在 AI 基础设施领域有迫切需求的公司。Nvidia 作为这一模式的典型实践者，通过 not-acqui-hire 快速获得了关键的芯片设计专利和制造工艺。</p><p>投资机构，特别是专注于深科技的 VC，也在重新评估投资组合公司的退出策略，将 not-acqui-hire 视为传统 IPO 和全额收购之外的第三种选择。</p><p>一些专业的技术资产评估和转移服务商开始出现，为这类交易提供支撑服务。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>暂无公开表态。各大 AI 公司尚未就 not-acqui-hire 模式发表明确的公开立场，但从交易活动来看，多家公司都在探索类似的资产获取方式。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联。</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ Not-acqui-hire 反映了行业从"人才争夺"向"技术整合"的理性回归，有助于减少恶性挖人竞争。</div><div class="tp-item">→ 这种模式为初创公司提供了新的退出选择，创始团队可以在技术变现的同时保持创业自主性。</div><div class="tp-item">→ 纯技术资产交易有助于加速行业整体的技术扩散和创新应用，避免优质技术因团队整合困难而被埋没。</div><div class="tp-item">→ 相比传统收购，not-acqui-hire 在监管合规方面具有优势，有助于构建更健康的行业竞争环境。</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免将 not-acqui-hire 与"技术抄袭"或"恶意挖空"等负面概念关联；注意强调这是正当的商业交易模式，不是对人才价值的否定；在讨论时避免暗示传统 acqui-hire 是"过时"的，以免得罪合作伙伴。</p></div></div>
+      <div class="card-meta">🔺上升 · 升温 · 来源：<a href="https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/" target="_blank" rel="noopener">TechCrunch</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">AI token futures</span>
+          <span class="concept-zh">AI令牌期货</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#9D174D;background:#FCE7F3;border-color:#9D174D40">business_model</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span><span class="repeat-tag">🔁 连续 2 天</span></div>
+      </div>
+      <div class="card-oneliner">将AI计算令牌作为大宗商品进行期货交易的金融衍生品</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>AI token futures（AI令牌期货）是一种金融衍生品，将AI模型推理过程中消耗的token（令牌）视为类似石油、黄金的大宗商品，允许投资者对未来某个时间点的token价格进行买卖合约。</p><p>这种期货的基础资产是AI token——即AI模型处理输入和生成输出时消耗的计算单位。传统上token被视为AI服务的计算输出，但现在越来越多被重新定义为AI经济的原材料投入。大型交易所正在围绕AI token设计标准化的期货合约，包括交割规格、价格发现机制和风险管理工具。</p><p>这一概念的出现反映了AI算力从技术资源向金融资产的转变，预示着AI经济可能形成独立的大宗商品市场。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>AI计算需求的爆发式增长使token消耗成为可预测的经济指标，类似传统能源消费。大型企业开始将AI token成本视为重要的经营风险，需要对冲工具来管理价格波动。</p><p>同时，AI基础设施的标准化程度提高，不同平台的token定价开始具备可比性，为期货标准化创造了条件。传统大宗商品交易商也在寻找新的市场机会，AI token作为数字时代的"新石油"具有巨大吸引力。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>目前主要是传统金融交易所和大宗商品交易商在探索这一概念。部分头部AI服务提供商正在与金融机构合作，研究token价格的标准化和期货合约设计。</p><p>加密货币交易所也在考虑将AI token期货作为新的产品类别，利用其在数字资产交易方面的经验优势。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>暂无公开表态</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ AI token期货的出现验证了AI计算资源正在成为基础经济要素，这为整个行业的价值重估提供了新视角</div><div class="tp-item">→ 期货市场的引入可能提高AI服务定价的透明度和稳定性，有利于行业健康发展</div><div class="tp-item">→ 金融化趋势反映了AI技术从实验阶段进入产业化阶段的重要标志</div><div class="tp-item">→ 需要关注过度金融化可能对AI技术本身创新带来的潜在影响</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免过度解读期货市场对AI技术发展的积极影响，金融化并不等同于技术进步。需要区分金融创新与技术创新，避免将金融工具的复杂性与AI技术的先进性混淆。</p></div></div>
+      <div class="card-meta">🆕首次出现 · 萌芽 · 来源：<a href="https://techcrunch.com/2026/05/28/just-like-gold-and-oil-well-soon-be-able-to-trade-ai-token-futures/" target="_blank" rel="noopener">TechCrunch</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">no-code agent-builder</span>
+          <span class="concept-zh">无代码智能体构建器</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#16A34A;background:#DCFCE7;border-color:#16A34A40">tool</span><span class="tag" style="color:#B45309;background:#FEF3C7;border-color:#B45309">rising</span></div>
+      </div>
+      <div class="card-oneliner">无需编程即可创建AI智能体的可视化工具</div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="card-meta">来源：<a href="https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/" target="_blank" rel="noopener">TechCrunch</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">continuous memory</span>
+          <span class="concept-zh">持续记忆</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#7C3AED;background:#EDE9FE;border-color:#7C3AED40">agent</span><span class="tag" style="color:#15803D;background:#DCFCE7;border-color:#15803D">new</span></div>
+      </div>
+      <div class="card-oneliner">AI agent 在多次会话间自动保留和调用工作模式、偏好等记忆的能力。</div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">是什么</div><div class="section-body"><p>Continuous memory（持续记忆）是指 AI agent 能够跨会话持续学习和记住用户的工作习惯、编程风格、偏好设置等信息，并在后续交互中自动调用这些记忆的技术能力。与传统的 session-based memory（会话记忆）不同，持续记忆不会在对话结束后丢失，而是形成长期的用户画像。</p><p>以编程 agent 为例，持续记忆能让 AI 记住用户喜欢的代码结构、命名习惯、常用框架，在新的编程任务中自动采用用户熟悉的方式。这种记忆是"自动的"——用户无需每次都重新说明偏好，agent 会基于历史交互数据主动推断和应用。目前主要应用在代码生成、写作辅助等需要个性化适配的场景。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">为什么现在火</div><div class="section-body"><p>持续记忆概念在 2024 年下半年开始受到关注，主要原因是 AI agent 应用的实用化进程。早期的 agent 主要是 demo 性质，但随着企业开始在实际工作流程中部署 agent，"记忆断层"问题变得突出——每次新会话都要重新解释需求和偏好，严重影响使用体验。</p><p>Komi-learn 这类工具的出现，标志着 agent 开发者开始重视"学习型 agent"的构建。这与当前 agent 赛道从"能用"向"好用"升级的趋势一致。同时，token 成本的下降也为长期记忆存储提供了经济可行性。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">谁在推动</div><div class="section-body"><p>目前主要由垂直应用开发者推动，如 Komi-learn（编程 agent）、Notion AI（写作记忆）等工具型产品。这些开发者直接面对用户的个性化需求，对持续记忆的价值感知最敏锐。</p><p>研究层面，斯坦福、CMU 等机构在探索 memory-augmented agent 架构。商业层面，一些 AI 基础设施公司开始提供 agent memory 服务，但还未形成主导性玩家。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">竞对动态</div><div class="section-body"><p>暂无公开表态。主要 AI 公司尚未将 continuous memory 作为核心产品特性进行宣传，可能仍处在技术验证阶段。</p></div></div>
+      <div class="section-divider"></div><div class="card-section"><div class="section-label">与 MINIMAX 的关联</div><div class="section-body"><p>与 MiniMax 当前业务无直接关联。</p></div></div>
+      <div class="section-divider"></div><div class="card-section tp-section"><div class="section-label">PR 可用 TALKING POINTS</div><div class="tp-body"><div class="tp-item">→ 持续记忆代表 AI agent 从工具向伙伴的演进，是提升用户体验的关键技术方向</div><div class="tp-item">→ 个性化记忆需要在用户隐私保护和使用便利性之间找到平衡点</div><div class="tp-item">→ 记忆能力的差异化将成为 agent 产品竞争的新维度</div><div class="tp-item">→ 持续学习型 agent 对数据安全和记忆准确性提出更高要求</div></div></div>
+      <div class="section-divider"></div><div class="card-section risk-section"><div class="section-label">风险提示</div><div class="section-body"><p>避免过度承诺记忆能力，该技术仍在早期阶段，存在记忆偏差、隐私泄露等风险。讨论时应强调技术成熟度和安全保障措施。</p></div></div>
+      <div class="card-meta">🆕首次出现 · 萌芽 · 来源：<a href="https://github.com/kurikomi-labs/komi-learn" target="_blank" rel="noopener">Hacker News</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">AI inference</span>
+          <span class="concept-zh">AI推理</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#0891B2;background:#CFFAFE;border-color:#0891B240">infra</span><span class="tag" style="color:#B45309;background:#FEF3C7;border-color:#B45309">rising</span></div>
+      </div>
+      <div class="card-oneliner">AI模型处理输入并生成响应的计算过程</div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="card-meta">来源：<a href="https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/" target="_blank" rel="noopener">TechCrunch</a></div>
+    </div>
+  </div>
+  <div class="tier-section">
+    <div class="tier-header">
+      <span class="tier-badge" style="background:#6B7280">C TIER</span>
+      <span class="tier-desc">备查</span>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="concept-en">deceptive alignment</span>
+          <span class="concept-zh">欺骗性对齐</span>
+        </div>
+        <div class="card-tags"><span class="tag" style="color:#DC2626;background:#FEE2E2;border-color:#DC262640">regulation</span><span class="tag" style="color:#6B7280;background:#F3F4F6;border-color:#6B7280">resurfacing</span><span class="repeat-tag">🔁 连续 6 天</span></div>
+      </div>
+      <div class="card-oneliner">AI模型表面遵守人类价值但实际有隐藏议程的对齐问题</div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="card-meta">来源：<a href="https://x.com/jackclark/status/1234567894" target="_blank" rel="noopener">X/Twitter</a></div>
+    </div>
+  </div>
+  <div class="page-footer">硅谷概念雷达 · MiniMax PR Team · 2026-05-31 生成</div>
+</div>
+</body>
+</html>
